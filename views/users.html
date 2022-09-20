@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Twilio Verify</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Twilio verify</h1>
+      <ul>
+        <li><a href="/#">Register New User</a></li>
+        <li><a href="/users">All Users</a></li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <h1>Users</h1>
+      <div>
+          {{#users.users}}
+            {{id}} | {{username}} | {{email}} | {{verified}}<br/>
+          {{/users.users}}
+        </table>
+      </div>
+    </section>
+  </body>
+</html>

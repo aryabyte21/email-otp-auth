@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Twilio Verify</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Twilio verify</h1>
+      <ul>
+        <li><a href="/#">Register New User</a></li>
+        <li><a href="/users">All Users</a></li>
+      </ul>
+    </nav>
+
+    <section class="content">
+    <form accept-charset="UTF-8" method="post">
+      <p>{{message}}</p>
+    <div class="row">
+      <div class="col-25">
+        <label>Enter the code received at: {{email}}</label>
+      </div>
+      <div class="col-75">
+        <input name="email" id="email" type="hidden" value="{{email}}" />
+        <input name="code" id="code" type="number"></select>
+      </div>
+    </div>
+    <div class="row">
+      <button name="button" type="submit">Verify</button>
+    </div>
+     </form>
+   </section>
+   
+</body>
+</html>
